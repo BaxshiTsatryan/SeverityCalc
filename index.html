@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Severity Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>CS Severity Calculator</h1>
+
+<div class="dropdown">
+    <label for="dropdown1">Browser:</label>
+    <select id="dropdown1" name="dropdown1">
+        <option value="1">All</option>
+        <option value="0.8">Google Chrome</option>
+        <option value="0.2">Mozilla Firefox</option>
+        <option value="0.1">Safari</option>
+    </select>
+</div>
+
+<div class="dropdown">
+    <label for="dropdown2">Reproducibility:</label>
+    <select id="dropdown2" name="dropdown2">
+        <option value="1">Always</option>
+        <option value="0.2">Sometimes</option>
+    </select>
+</div>
+
+<div class="dropdown">
+    <label for="dropdown3">Stage:</label>
+    <select id="dropdown3" name="dropdown3">
+        <option value="0.8">Production</option>
+        <option value="1">Testing</option>
+    </select>
+</div>
+
+<div class="dropdown">
+    <label for="dropdown4">Impact:</label>
+    <select id="dropdown4" name="dropdown4">
+        <option value="1">Blocking scenarios</option>
+        <option value="0.8">Critical functionality broken</option>
+        <option value="0.4">It's an inconvenience</option>
+        <option value="0.1">Cosmetic defect / not affects the user</option>
+    </select>
+</div>
+
+<div class="number-input">
+    <label for="number">Support Reports (I/A):</label>
+    <input type="number" id="number" name="number">
+</div>
+
+<div class="submit-button">
+    <button onclick="calculateResult()">Submit</button>
+</div>
+
+<div class="result" id="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

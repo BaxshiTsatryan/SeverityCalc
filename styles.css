@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    margin-bottom: 10px;
+}
+
+.dropdown label {
+    display: block;
+}
+
+.dropdown select {
+    width: 200px;
+    padding: 5px;
+}
+
+.number-input {
+    margin-top: 20px;
+}
+
+.number-input label {
+    display: block;
+}
+
+.number-input input {
+    width: 100px;
+    padding: 5px;
+}
+
+.submit-button {
+    margin-top: 20px;
+}
+
+.submit-button button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
